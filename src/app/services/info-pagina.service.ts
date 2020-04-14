@@ -23,7 +23,7 @@ export class InfoPaginaService {
   
   private cargarInfo(){
     
-    this.http.get('/assets/data/data-pagina.json')
+    this.http.get('https://curso-free-angular.firebaseio.com/data-pagina.json')
       .subscribe( (resp:InfoPagina) => {
         this.cargada = true;
         this.info = resp;
